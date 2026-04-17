@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agoo Tourism</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    scroll-behavior: smooth;
+}
+.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/5a/Agoo_Beach.jpg') center/cover no-repeat;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">Agoo Tourism</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+<li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+<li class="nav-item"><a class="nav-link" href="#business">Businesses</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<section id="home" class="hero text-center">
+<h1>Welcome to Agoo, La Union</h1>
+</section>
+
+
+<section id="about" class="container py-5">
+<h2>About Agoo</h2>
+<p>Established in 1578, Agoo is considered the oldest town in La Union and was formerly part of Pangasinan. The town’s name is believed to have come from the pine-like “aroo” trees that once lined its riverbanks. Agoo played a significant role in early evangelization efforts in Northern Luzon, with Franciscan missionaries founding a church dedicated to St. Francis of Assisi. Over time, other religious orders such as the Augustinians contributed to the community’s development by introducing education, religious practices, and construction techniques.</p>
+<p><strong>Mission:</strong> Promote sustainable tourism.</p>
+<p><strong>Vision:</strong> Make Agoo a top tourist destination in La Union.</p>
+</section>
+
+
+<section id="attractions" class="container py-5">
+<h2>Tourist Attractions</h2>
+<div class="row">
+
+
+<div class="col-md-4 mb-4">
+<div class="card">
+<img src="basilica.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Basilica Minore of Our Lady of Charity</h5>
+<p>Famous religious landmark.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">View More</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card">
+<img src="agoo beach.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Agoo Beach</h5>
+<p>Relaxing coastal destination.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">View More</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card">
+<img src="ecopark.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Agoo Eco Park</h5>
+<p>Nature and relaxation spot.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">View More</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card">
+<img src="eagle of the north.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Eagle of the North</h5>
+<p>Historical landmark in Agoo.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">View More</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card">
+<img src="agoo plaza.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Public Plaza of Agoo</h5>
+<p>Community gathering place.</p>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">View More</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section id="events" class="bg-light py-5">
+<div class="container">
+<h2>Festivals & Events</h2>
+<ul>
+<li>Town Fiesta – December</li>
+<li>Religious Celebrations – Year-round</li>
+<li>Cultural Festivals – Various months</li>
+</ul>
+</div>
+</section>
+
+
+<section id="business" class="container py-5">
+<h2>Local Businesses</h2>
+<div class="row">
+
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Makkan Ilokano</h5>
+<p>Comfort Food Restaurant</p>
+<p>Contact: 0939 386 7618</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Aroo Elyu</h5>
+<p>Grill and Restaurant</p>
+<p>Contact: 09987654321</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Splash Town Waterpark & Resort</h5>
+<p>Hotel Resort and Pavilion</p>
+<p>Contact: 09178264592</p>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section id="contact" class="bg-dark text-white py-5">
+<div class="container">
+<h2>Contact Us</h2>
+<form onsubmit="return validateForm()">
+<input class="form-control mb-2" type="text" id="name" placeholder="Name">
+<input class="form-control mb-2" type="email" id="email" placeholder="Email">
+<textarea class="form-control mb-2" id="message" placeholder="Message"></textarea>
+<button class="btn btn-primary">Send</button>
+</form>
+</div>
+</section>
+
+
+<div class="modal fade" id="modal1">
+<div class="modal-dialog"><div class="modal-content p-3">
+<h5>Basilica Minore</h5>
+<p>Located in Agoo, a historic Catholic church.</p>
+</div></div>
+</div>
+
+<div class="modal fade" id="modal2">
+<div class="modal-dialog"><div class="modal-content p-3">
+<h5>Agoo Beach</h5>
+<p>Popular beach destination in La Union.</p>
+</div></div>
+</div>
+
+<div class="modal fade" id="modal3">
+<div class="modal-dialog"><div class="modal-content p-3">
+<h5>Agoo Eco Park</h5>
+<p>Relaxing eco-friendly park.</p>
+</div></div>
+</div>
+
+<div class="modal fade" id="modal4">
+<div class="modal-dialog"><div class="modal-content p-3">
+<h5>Marcos Bust</h5>
+<p>Historical landmark in Agoo.</p>
+</div></div>
+</div>
+
+<div class="modal fade" id="modal5">
+<div class="modal-dialog"><div class="modal-content p-3">
+<h5>Public Plaza</h5>
+<p>Main gathering place in Agoo.</p>
+</div></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function validateForm() {
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let message = document.getElementById("message").value;
+
+if (!name || !email || !message) {
+alert("All fields are required!");
+return false;
+}
+alert("Message sent!");
+return true;
+}
+</script>
+
+</body>
+</html>
